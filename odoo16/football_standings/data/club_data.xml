@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Copyright 2024 Fauzi Rakhman
+  License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+
+<odoo>
+    <data noupdate="1">
+        <record id="club_persib" model="data.club">
+            <field name="name">Persib</field>
+            <field name="city">Bandung</field>
+            <field name="image" type="base64" file="football_standings/static/img/logo_persib.png"/>
+        </record>
+        <record id="club_persija" model="data.club">
+            <field name="name">Persija</field>
+            <field name="city">Jakarta</field>
+            <field name="image" type="base64" file="football_standings/static/img/logo_persija.png"/>
+        </record>
+        <record id="club_arema" model="data.club">
+            <field name="name">Arema</field>
+            <field name="city">Malang</field>
+            <field name="image" type="base64" file="football_standings/static/img/logo_arema.png"/>
+        </record>
+        <record id="club_persebaya" model="data.club">
+            <field name="name">Persebaya</field>
+            <field name="city">Surabaya</field>
+            <field name="image" type="base64" file="football_standings/static/img/logo_persebaya.png"/>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_data_club,data.club,model_data_club,base.group_system,1,1,1,1
+access_match_score,match.score,model_match_score,base.group_system,1,1,1,1
+access_match_score_league,match.score.league,model_match_score_league,base.group_system,1,1,1,1
+access_league_standings,league.standings,model_league_standings,base.group_system,1,1,1,0

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright 2024 Fauzi Rakhman
+  License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+
+<odoo>
+    <menuitem id="football_root" name="Sepak Bola"/>
+    <menuitem id="football_liga" name="Liga" parent="football_root"/>
+    <menuitem id="football_liga_standings" name="Klasement" parent="football_liga" action="league_standings_action"/>
+    <menuitem id="football_liga_match_score" name="Score Pertandingan" parent="football_liga" action="match_score_action"/>
+    <menuitem id="football_liga_club" name="Klub" parent="football_liga" action="clubs_action"/>
+</odoo>

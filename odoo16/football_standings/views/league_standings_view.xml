@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+  Copyright 2024 Fauzi Rakhman
+  License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl.html).
+-->
+
+<odoo>
+    <record id="league_standings_view_tree" model="ir.ui.view">
+        <field name="name">league.standings.view.tree</field>
+        <field name="model">league.standings</field>
+        <field name="arch" type="xml">
+            <tree string="Klasemen" create="0" edit="0" default_order="point desc, position asc">
+                <field name="position" string="No."/>
+                <field name="club_id"/>
+                <field name="played" string="Ma"/>
+                <field name="won" string="Me"/>
+                <field name="drawn" string="S"/>
+                <field name="lost" string="K"/>
+                <field name="goals_made" string="GM"/>
+                <field name="goals_against" string="GK"/>
+                <field name="point" string="Point"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="league_standings_action" model="ir.actions.act_window">
+        <field name="name">Klasemen</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">league.standings</field>
+        <field name="view_mode">tree</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                No results available.
+            </p><p>
+            Create new one from scratch.
+        </p>
+        </field>
+    </record>
+</odoo>
